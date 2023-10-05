@@ -132,6 +132,7 @@ export default function App() {
                 <li>
                 To book the charging station, Mail us your vehicle number and contact number, CS name.
                 </li>
+                <br> <p>©️ Team Vidhyut - ElecTrip 📧 hackelite.sup@gmail.com</p>
           </ol>
           
           <button

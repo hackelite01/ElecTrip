@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid gray;
+  background-color: #efecff;
+
+  /* background-color: rgb(255, 255, 229); */
+  /* margin-bottom: 1rem; */
+}
+
+.header i {
+  font-size: 2.25rem;
+  cursor: pointer;
+  border-radius: 50%;
+  /* background-color: #7dd3fc; */
+  /* color: #0ea5e9; */
+}
+
+.header div {
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 85vh;
+}
+
+.column {
+  border-left: 1px solid gray;
+  /* width: 100%; */
+  flex: 1;
+  display: flex;
+  padding: 1rem;
+}
+
+.column-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-1-item {
+  /* padding: 1rem; */
+  flex: 1;
+}
+
+.column-1 .form {
+  border-bottom: 1px solid gray;
+  padding-bottom: 1rem;
+}
+
+.mapview {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-form {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.input-form > div {
+  flex: 1;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.map-view {
+  width: 100%;
+  height: 45vh;
+}
+
+.column-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success {
+  padding: 0.5rem;
+  border: 2px solid rgb(89, 216, 89);
+  border-radius: 8px;
+  background-color: rgb(213, 255, 213);
+  margin-bottom: 1rem;
+}
+
+.error {
+  padding: 0.5rem;
+  border: 2px solid rgb(255, 123, 123);
+  border-radius: 8px;
+  background-color: rgb(255, 220, 220);
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    height: fit-content;
+  }
+}

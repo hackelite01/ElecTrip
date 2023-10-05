@@ -129,6 +129,9 @@ export default function App() {
             <li>
               Use the WebApp by refreshing everytime to get updated Data.
             </li>
+                <li>
+                To book the charging station, Mail us your vehicle number and contact number, CS name.
+                </li>
           </ol>
           
           <button

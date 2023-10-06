@@ -110,7 +110,7 @@ export default function App() {
         )}
       </div>
       {showModal && (
-        <Modal style={{ zIndex: 1000 }}">
+        <Modal style={{ zIndex: 1000 }}>
           <h2 style={{ textAlign: "center" }}>How to use ElecTrip</h2>
           <ol>
             <li>

@@ -129,12 +129,23 @@ export default function App() {
             <li>
               Use the WebApp by refreshing everytime to get updated Data.
             </li>
-                <li>
-                To book the charging station, Mail us your vehicle number and contact number, CS name.
-                </li>
-                <li>
-                ©️ Team Vidhyut - ElecTrip 📧 hackelite.sup@gmail.com 
-                </li>
+          </ol>
+          <h2 style={{ textAlign: "center" }}> Some specific guidelines for using your EV effectively:</h2>
+          <ol>
+            <li><strong>Utilize Regenerative Braking:</strong> Take advantage of regenerative braking systems in your EV. They capture energy during braking and convert it back into electricity, improving efficiency.
+</li>
+<li><strong>Avoid Rapid Acceleration:</strong> Sudden and rapid acceleration can reduce your EV's efficiency. Try to accelerate smoothly and anticipate stops to minimize energy waste.
+</li>
+<li><strong>Limit Use of Energy-Intensive Features:</strong> Minimize the use of energy-intensive features such as high-beam headlights, audio systems, and seat heaters when not needed.
+</li>
+<li><strong>Drive Smoothly:</strong> Smooth and gradual driving can help maintain efficiency. Avoid sudden stops and starts when possible.
+</li>
+<li><strong>Battery Temperature:</strong> Charging can generate heat in the battery, especially at higher charging rates. Allowing the battery to cool down slightly helps maintain its optimal operating temperature, which is beneficial for long-term battery health.
+</li>
+<li><strong>Stabilization:</strong> After charging, the battery's state of charge (SOC) may need a brief period to stabilize. Waiting for a few minutes ensures that the SOC readings are accurate.
+</li>
+<li><strong>Efficiency:</strong> Starting your journey with a slightly cooled-down battery can improve energy efficiency and potentially extend your driving range.
+</li>
           </ol>
           
           <button

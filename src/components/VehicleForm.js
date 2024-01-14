@@ -10,7 +10,7 @@ export default function VehicleForm({ setSoc, setBatteryCapacity }) {
     const numericValue = parseFloat(enteredValue);
 
     // Check if the entered value is a valid number and within the specified range
-    if (!isNaN(numericValue) && numericValue >= 0 && numericValue <= 80) {
+    if (!isNaN(numericValue) && numericValue >= 15 && numericValue <= 80) {
       setBatteryCapacity(numericValue);
       setMaxCapacity(numericValue);
     } else {

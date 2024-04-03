@@ -10,12 +10,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.7rem 2rem;
   position: sticky;
   top: 0;
   border-bottom: 1px solid green;
   background-color: #47d147;
-
+  z-index: 10;
   /* background-color: rgb(255, 255, 229); */
   /* margin-bottom: 1rem; */
 }
@@ -31,8 +31,14 @@ body {
 .header div {
   font-weight: 700;
   font-size: 1.75rem;
+  font-family: Georgia, serif;
+  /* margin-left: 590px; */
 }
-
+.header img{
+  width:40px;
+  /* -webkit-filter: drop-shadow(5px 5px 5px #222); */
+  filter: drop-shadow(2px 5px 5px #bcbcbc);
+}
 .container {
   display: flex;
   width: 100%;
@@ -41,6 +47,7 @@ body {
 
 .column {
   border-left: 1px solid gray;
+  margin-top: 30px;
   /* width: 100%; */
   flex: 1;
   display: flex;
@@ -61,7 +68,11 @@ body {
   border-bottom: 1px solid gray;
   padding-bottom: 1rem;
 }
-
+.form{
+  margin: 30px;
+  margin-top: 60px;
+  width: 40%;
+}
 .mapview {
   margin-top: 1rem;
   display: flex;
@@ -70,10 +81,11 @@ body {
 }
 
 .input-form {
-  display: flex;
-  justify-content: space-around;
+  /* display: flex;
+  justify-content: space-around; */
   gap: 1rem;
   margin-bottom: 1rem;
+  
 }
 
 .input-form > div {
@@ -90,6 +102,7 @@ body {
 }
 
 .column-2 {
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,4 +133,9 @@ body {
     flex-direction: column;
     height: fit-content;
   }
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }

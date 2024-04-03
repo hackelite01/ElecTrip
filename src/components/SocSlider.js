@@ -30,8 +30,10 @@ export default function SocSlider({ setSoc, maxCapacity }) {
   };
   return (
     <Box>
+      <br/>
+      <br/>
       <Typography id="input-slider" gutterBottom>
-        Initial SoC - State of Charge
+        Current Charging Status
       </Typography>
 
       <Grid container spacing={2} alignItems="center">

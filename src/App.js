@@ -57,24 +57,31 @@ export default function App() {
   return (
     <div className="App">
       <header className="header">
-        <i className="fa-regular fa-circle-question" onClick={handleModal}></i>
+        <img className="header-logo" src="logo.png"/>
         <div>ElecTrip</div>
+        <i className="fa-regular fa-circle-question" onClick={handleModal}></i>
       </header>
       <div className="container">
-        <div className="column column-1">
+        {/* <div className="column column-1"> */}
           <div className="form">
             <div className="input-form">
-              <SearchBar setLoc={setOrigin} placeholder={"Origin"} />
+              <SearchBar setLoc={setOrigin} placeholder={"Your Location"} />
+              <br/>
+              <br/>
               <SearchBar setLoc={setDestination} placeholder={"Destination"} />
             </div>
+            <br/>
+         
             <VehicleForm
               setSoc={setSoc}
+              
               setBatteryCapacity={setBatteryCapacity}
             />
 
             {message ? (
               <>
                 <div className={messageClass}>{message}</div>
+                <div className="button-container">
                 <Button
                   className="button"
                   onClick={handleReload}
@@ -82,23 +89,24 @@ export default function App() {
                 >
                   Try again!
                 </Button>
+                </div>
               </>
             ) : (
-              <Button
-                className="button"
-                onClick={handleClick}
-                variant="contained"
-                disabled={isDisabled}
-              >
+              <div className="button-container">
+              <Button  className="button" onClick={handleClick} variant="contained" disabled={isDisabled}>
                 {buttonText}
               </Button>
+              </div>
             )}
-          </div>
+            </div>
+          
+       
+      <div className="column column-1">
           <div className="column-1-item mapview">
             {route ? <MapView route={route} /> : "Route will appear here"}
           </div>
-        </div>
-
+        {/* </div> */}
+         <br/>
         {route ? (
           <div className="column overflow-auto itinerary">
             <TripItinerary route={route} batteryCapacity={batteryCapacity} />
@@ -108,6 +116,7 @@ export default function App() {
             Trip Itinerary will appear here
           </div>
         )}
+      </div>  
       </div>
       {showModal && (
         <Modal style={{ zIndex: 1000 }}>

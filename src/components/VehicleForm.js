@@ -15,7 +15,7 @@ export default function VehicleForm({ setSoc, setBatteryCapacity }) {
       setMaxCapacity(numericValue);
     } else {
       // If not a valid number or outside the range, prompt the user
-      alert("Please enter a valid number between 0 and 80 kWh");
+      // alert("Please enter a valid number between 0 and 80 kWh");
       // Optionally, you may reset the input value to the previous valid value
       e.target.value = maxCapacity;
     }
